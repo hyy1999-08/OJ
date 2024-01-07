@@ -21,15 +21,11 @@ public class leetcode_27 {
 
     public static int removeElement(int[] nums, int val) {
         int left = 0, right = 0;
-        while (right != nums.length) {
-            if (val == nums[left] || val == nums[right]) {
-                while (right < nums.length && nums[right] == val) right++;
-            }
-            if (right < nums.length) {
-                nums[left++] = nums[right++];
+        for (; right != nums.length; right++) {
+            if (val != nums[right]) {
+                nums[left++] = nums[right];
             }
         }
-        System.out.println(Arrays.toString(nums));
         return nums.length - (right - left);
     }
 
