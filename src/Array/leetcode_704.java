@@ -28,9 +28,10 @@ public class leetcode_704 {
 
     @Test
     public void test(){
-
-
-
+        int a[]=new int[]{-1,0,3,5,9,12};
+        for(int i=0;i<a.length;i++){
+            System.out.println();
+        }
     }
 
 
