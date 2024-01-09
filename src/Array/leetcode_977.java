@@ -25,16 +25,16 @@ public class leetcode_977 {
 
     //法二:相向
     public static int[] sortedSquares_2(int[] nums) {
-        int[] result=new int[nums.length];
-        int currentPos=nums.length-1;
-        for(int left=0,right=nums.length-1;currentPos>=0;currentPos--){
-            int  leftVal= nums[left] * nums[left];
+        int[] result = new int[nums.length];
+        int currentPos = nums.length - 1;
+        for (int left = 0, right = nums.length - 1; currentPos >= 0; currentPos--) {
+            int leftVal = nums[left] * nums[left];
             int rightVal = nums[right] * nums[right];
-            if(leftVal<rightVal){
-                result[currentPos]=rightVal;
+            if (leftVal < rightVal) {
+                result[currentPos] = rightVal;
                 right--;
-            }else{
-                result[currentPos]=leftVal;
+            } else {
+                result[currentPos] = leftVal;
                 left++;
             }
 
