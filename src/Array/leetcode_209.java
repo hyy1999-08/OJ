@@ -37,16 +37,31 @@ public class leetcode_209 {
         for (; right < nums.length; right++) {
             sum += nums[right];
             // 左边记录
-            if (sum >= target) {
-                while (sum >= target) {
-                    sum -= nums[left];
-                    // 临界的时候减完发现小了就记录
-                    if (sum < target) {
-                        min = Math.min(min, right - left + 1);
-                    }
-                    // 该数组已记录所以++
-                    left++;
+            while (sum >= target) {
+                sum -= nums[left];
+                // 临界的时候减完发现小了就记录
+                if (sum < target) {
+                    min = Math.min(min, right - left + 1);
                 }
+                // 该数组已记录所以++
+                left++;
+            }
+        }
+
+        return min == Integer.MAX_VALUE ? 0 : min;
+    }
+
+    //改良逻辑: 连续，滑窗法
+    public static int minSubArrayLen_3(int target, int[] nums) {
+        int left = 0, right = 0;
+        int min = Integer.MAX_VALUE;
+        int sum = 0;
+        for (; right < nums.length; right++) {
+            sum += nums[right];
+            // 左边记录
+            while (sum >= target) {
+                min = Math.min(min, right - left + 1);
+                sum-=nums[left++];
             }
         }
 
