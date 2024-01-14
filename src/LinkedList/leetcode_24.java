@@ -53,12 +53,11 @@ public class leetcode_24 {
         while(curNode!=null){
             ListNode firstNode=curNode.next;
             if(firstNode==null){break;}
-            ListNode secondNode=curNode.next.next;
+            ListNode secondNode=firstNode.next;
             if(secondNode==null){break;}
-            ListNode tempNode=secondNode.next;
             curNode.next=secondNode;
+            firstNode.next=secondNode.next;
             secondNode.next=firstNode;
-            firstNode.next=tempNode;
 
             curNode=firstNode;
         }
