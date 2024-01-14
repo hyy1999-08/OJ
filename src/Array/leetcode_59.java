@@ -23,7 +23,6 @@ public class leetcode_59 {
         }
     }
 
-    // 法一：暴力,找到所有可能并记录最小值,超出时间限制
     public static int[][] generateMatrix(int n) {
         // 向右向下向左向上
         //约定向右为x正，向下为y正
