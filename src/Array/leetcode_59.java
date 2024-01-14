@@ -25,74 +25,59 @@ public class leetcode_59 {
 
     // 法一：暴力,找到所有可能并记录最小值,超出时间限制
     public static int[][] generateMatrix(int n) {
-        if(n==1){
-            int[][] result=new int[1][1];
-            result[0][0]=1;
-            return  result;
-        }
         // 向右向下向左向上
         //约定向右为x正，向下为y正
-        int xPos = 0;
-        int yPos = 0;
-        int num = 1;
-
         int[][] result = new int[n][n];
         if(n%2!=0){
             result[n/2][n/2]=n*n;
         }
+        // x第几行row
+        int xPos = 0;
+
+        // y代表第几列column
+        int yPos = 0;
+
+        //每圈x起始位置
         int xInitial=0;
+
+        // 每圈y起始位置
         int yInitial=0;
-        int round = n - 1;
+
+        // 负责生成数字填充
+        int num = 1;
+
+        // 每圈过后需要迭代的差值
+        int offset = 1;
         while (num < n * n) {
-            xPos=xInitial;
-            yPos=yInitial;
-            rightFill(result, xPos, yPos, round, num);
-            xPos = xPos + round;
-            num += round;
-            if (num >= n * n) {
-                break;
+            xPos = xInitial;
+            yPos = yInitial;
+
+            //（不考虑抽离方法，因为基本数据类型不好传递）
+            // 往右边填充
+            for(; yPos < n-offset; yPos++){
+                result[xPos][yPos]=num++;
             }
-            downFill(result, xPos, yPos, round, num);
-            yPos = yPos + round;
-            num += round;
-            leftFill(result, xPos, yPos, round, num);
-            xPos = xPos - round;
-            num += round;
-            upFill(result, xPos, yPos, round, num);
-            num += round;
-            if (num >= n * n) {
-                break;
+
+            // 往下填充
+            for( ; xPos < n-offset; xPos++){
+                result[xPos][yPos]=num++;
             }
+
+            // 往左边填充
+            for(; yPos >= offset; yPos--){
+                result[xPos][yPos]=num++;
+            }
+
+            // 往上边填充
+            for(; xPos >= offset; xPos--){
+                result[xPos][yPos]=num++;
+            }
+
             xInitial++;
             yInitial++;
-            round -= 2;
+            offset++;
         }
         return result;
     }
-
-    private static void rightFill(int[][] result, int xPos, int yPos, int n,int num){
-        for (int i = yPos, j = xPos; j < xPos + n; j++, num++) {
-            result[i][j]=num;
-        }
-    }
-
-    private static void downFill(int[][] result, int xPos, int yPos, int n,int num){
-        for (int i = yPos, j = xPos; i < yPos + n; i++, num++) {
-            result[i][j]=num;
-        }
-    }
-
-    private static void leftFill(int[][] result, int xPos, int yPos, int n,int num){
-        for (int i = yPos, j = xPos; j > xPos - n; j--, num++) {
-            result[i][j]=num;
-        }
-    }
-
-    private static void upFill(int[][] result, int xPos, int yPos, int n,int num){
-        for (int i = yPos, j = xPos; i > yPos - n; i--, num++) {
-            result[i][j]=num;
-        }
-    }
-
 
 }
