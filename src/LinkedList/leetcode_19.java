@@ -27,32 +27,56 @@ public class leetcode_19 {
 
     }
 
-    public ListNode removeNthFromEnd(ListNode head, int n) {
-        if (head == null) {
-            return head;
+    public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+        if (headA == null || headB == null) {
+            return null;
         }
-        ListNode fakeNode = new ListNode(-1, head);
+        ListNode tempNode = headA;
+        int numA = 1;
+        while (tempNode.next != null) {
+            tempNode = tempNode.next;
+            numA++;
+        }
+        int numB = 1;
+        tempNode = headB;
+        while (tempNode.next != null) {
+            tempNode = tempNode.next;
+            numB++;
+        }
 
-        ListNode preNode = fakeNode;
-        ListNode curNode = head;
-
-        // 先移动
-        for (int i = 1; i < n; i++) {
-            // 如果还没移动那么多，就到头了就直接返回表明不用删除
-            if (curNode == null) {
-                return head;
+        if (numA > numB) {
+            ListNode aNode = headA;
+            ListNode bNode = headB;
+            // 移动numA
+            for (int i = 0; i < numA - numB; i++) {
+                aNode = aNode.next;
             }
-            curNode = curNode.next;
+            while (aNode != null) {
+                if (aNode == bNode) {
+                    return aNode;
+                }
+                aNode = aNode.next;
+                bNode = bNode.next;
+            }
+
+        } else {
+            ListNode aNode = headA;
+            ListNode bNode = headB;
+            // 移动numA
+            for (int i = 0; i < numB - numA; i++) {
+                bNode = bNode.next;
+            }
+            while (aNode != null) {
+                if (aNode == bNode) {
+                    return aNode;
+                }
+                aNode = aNode.next;
+                bNode = bNode.next;
+            }
+
         }
 
-        while (curNode.next != null) {
-            preNode = preNode.next;
-            curNode = curNode.next;
-        }
 
-        // 删除
-        preNode.next = preNode.next.next;
-
-        return fakeNode.next;
+        return null;
     }
 }
