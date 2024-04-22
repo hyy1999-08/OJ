@@ -1,14 +1,10 @@
 package String;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * @author:Yaoye Huang
  * @create 2024- 04- 22 21:29
  */
-public class leetcode_51 {
+public class leetcode_151 {
 
     public static void main(String[] args) {
         System.out.println(reverseWords("a good   example"));
