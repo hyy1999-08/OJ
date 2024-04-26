@@ -5,40 +5,39 @@ package LinkedList;
  * @create 2024- 07- 01 21:29
  */
 public class leetcode_206 {
-    class ListNode{
+    class ListNode {
         int val;
         ListNode next;
-        ListNode() {}
-        ListNode(int val) { this.val = val; }
-        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+
+        ListNode() {
+        }
+
+        ListNode(int val) {
+            this.val = val;
+        }
+
+        ListNode(int val, ListNode next) {
+            this.val = val;
+            this.next = next;
+        }
     }
 
     public static void main(String[] args) {
 
 
-
-
-
     }
 
     public ListNode reverseList(ListNode head) {
-        if(head==null || head.next==null){
-            return head;
+        ListNode preNode = null;
+        ListNode targetNode = head;
+
+        while (targetNode!=null) {
+            ListNode nextNode = targetNode.next;
+            targetNode.next = preNode;
+            preNode = targetNode;
+            targetNode = nextNode;
         }
-
-        ListNode pre=null;
-        ListNode cur=head;
-        ListNode next;
-
-        while(cur!=null){
-            // 记录
-            next=cur.next;
-            cur.next = pre;
-            pre=cur;
-            cur = next;
-        }
-        return pre;
-
+        return preNode;
     }
 
 
