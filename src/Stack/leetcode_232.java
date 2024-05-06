@@ -12,8 +12,8 @@ public class leetcode_232 {
         Stack<Integer> stack_out;
 
         public MyQueue() {
-            stack_in=new Stack<>();
-            stack_out=new Stack<>();
+            stack_in = new Stack<>();
+            stack_out = new Stack<>();
         }
 
         public void push(int x) {
@@ -21,30 +21,26 @@ public class leetcode_232 {
         }
 
         public int pop() {
-            while (!stack_in.empty()) {
-                stack_out.push(stack_in.pop());
-            }
-            int result = stack_out.pop();
-
-            while (!stack_out.empty()) {
-                stack_in.push(stack_out.pop());
-            }
-            return result;
+            stumpStackIn();
+            return stack_out.pop();
         }
 
+
         public int peek() {
-            while (!stack_in.empty()) {
-                stack_out.push(stack_in.pop());
-            }
-            int result = stack_out.peek();
-            while (!stack_out.empty()) {
-                stack_in.push(stack_out.pop());
-            }
-            return result;
+            stumpStackIn();
+            return stack_out.peek();
         }
 
         public boolean empty() {
-            return stack_in.empty();
+            return stack_in.isEmpty() && stack_out.isEmpty();
+        }
+
+        private void stumpStackIn() {
+            if (stack_out.isEmpty()) {
+                while (!stack_in.empty()) {
+                    stack_out.push(stack_in.pop());
+                }
+            }
         }
 
     }
