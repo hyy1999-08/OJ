@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="705b67d7-8836-44fc-b260-39f29ab0cc85" name="Changes" comment="20240221 刷题">
-      <change afterPath="$PROJECT_DIR$/src/HashTable/leetcode_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/demo/demoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/demo/demoTest2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/others/LRUCache_146.java" afterDir="false" />
+    <list default="true" id="705b67d7-8836-44fc-b260-39f29ab0cc85" name="Changes" comment="20240507 刷题">
+      <change afterPath="$PROJECT_DIR$/src/Stack/leetcode_20.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OJ.iml" beforeDir="false" afterPath="$PROJECT_DIR$/OJ.iml" afterDir="false" />
     </list>
@@ -70,8 +67,16 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.leetcode_15.executor&quot;: &quot;Run&quot;,
+    &quot;Application.leetcode_28.executor&quot;: &quot;Run&quot;,
+    &quot;Application.leetcode_383.executor&quot;: &quot;Run&quot;,
     &quot;Application.leetcode_454.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.leetcode_459.executor&quot;: &quot;Run&quot;,
+    &quot;Application.leetcode_51.executor&quot;: &quot;Run&quot;,
+    &quot;Application.leetcode_541.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.replace_number_kama54.executor&quot;: &quot;Run&quot;,
     &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JUnit.leetcode_225.test.executor&quot;: &quot;Run&quot;,
     &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
     &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
     &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
@@ -95,19 +100,20 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Stack" />
+      <recent name="String" />
       <recent name="HashTable" />
       <recent name="others" />
       <recent name="LinkedList" />
-      <recent name="Array" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.leetcode_454">
-    <configuration name="LRUCache_146" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="others.LRUCache_146" />
+  <component name="RunManager" selected="JUnit.leetcode_225.test">
+    <configuration name="leetcode_151" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="String.leetcode_151" />
       <module name="OJ" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="others.*" />
+          <option name="PATTERN" value="String.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,12 +121,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="demoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo.demoTest" />
+    <configuration name="leetcode_28" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="String.leetcode_28" />
       <module name="OJ" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="demo.*" />
+          <option name="PATTERN" value="String.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,12 +134,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="leetcode_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HashTable.leetcode_1" />
+    <configuration name="leetcode_459" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="String.leetcode_459" />
       <module name="OJ" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HashTable.*" />
+          <option name="PATTERN" value="String.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -141,12 +147,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="leetcode_454" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HashTable.leetcode_454" />
+    <configuration name="replace_number_kama54" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="String.replace_number_kama54" />
       <module name="OJ" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HashTable.*" />
+          <option name="PATTERN" value="String.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -154,16 +160,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LRUCache_146.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="leetcode_225.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OJ" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="others.*" />
+          <option name="PATTERN" value="Stack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="others" />
-      <option name="MAIN_CLASS_NAME" value="others.LRUCache_146" />
+      <option name="PACKAGE_NAME" value="Stack" />
+      <option name="MAIN_CLASS_NAME" value="Stack.leetcode_225" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -172,13 +178,20 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.leetcode_454" />
-        <item itemvalue="JUnit.LRUCache_146.test" />
-        <item itemvalue="Application.LRUCache_146" />
-        <item itemvalue="Application.demoTest" />
-        <item itemvalue="Application.leetcode_1" />
+        <item itemvalue="JUnit.leetcode_225.test" />
+        <item itemvalue="Application.leetcode_459" />
+        <item itemvalue="Application.leetcode_28" />
+        <item itemvalue="Application.leetcode_151" />
+        <item itemvalue="Application.replace_number_kama54" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -191,7 +204,14 @@
       <workItem from="1711869655507" duration="60000" />
       <workItem from="1712584948454" duration="938000" />
       <workItem from="1713192332648" duration="2083000" />
-      <workItem from="1713275148780" duration="1363000" />
+      <workItem from="1713275148780" duration="9788000" />
+      <workItem from="1713710262868" duration="3112000" />
+      <workItem from="1713796805979" duration="18897000" />
+      <workItem from="1714141013661" duration="1838000" />
+      <workItem from="1715003485020" duration="3135000" />
+      <workItem from="1715089508724" duration="4149000" />
+      <workItem from="1716299660296" duration="1199000" />
+      <workItem from="1718849223842" duration="3037000" />
     </task>
     <task id="LOCAL-00001" summary="RedAndGreen_25">
       <created>1688570193498</created>
@@ -347,7 +367,87 @@
       <option name="project" value="LOCAL" />
       <updated>1708529200350</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="20240416 刷题">
+      <option name="closed" value="true" />
+      <created>1713276579401</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1713276579401</updated>
+    </task>
+    <task id="LOCAL-00024" summary="20240420 刷题">
+      <option name="closed" value="true" />
+      <created>1713622551815</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1713622551815</updated>
+    </task>
+    <task id="LOCAL-00025" summary="20240421 刷题">
+      <option name="closed" value="true" />
+      <created>1713712576150</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1713712576150</updated>
+    </task>
+    <task id="LOCAL-00026" summary="20240422 刷题">
+      <option name="closed" value="true" />
+      <created>1713798850656</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1713798850656</updated>
+    </task>
+    <task id="LOCAL-00027" summary="20240422 刷题">
+      <option name="closed" value="true" />
+      <created>1713798941665</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1713798941665</updated>
+    </task>
+    <task id="LOCAL-00028" summary="20240424 刷题">
+      <option name="closed" value="true" />
+      <created>1713968136671</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1713968136671</updated>
+    </task>
+    <task id="LOCAL-00029" summary="20240426 刷题">
+      <option name="closed" value="true" />
+      <created>1714142087261</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1714142087261</updated>
+    </task>
+    <task id="LOCAL-00030" summary="20240506 刷题">
+      <option name="closed" value="true" />
+      <created>1715004694707</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1715004694707</updated>
+    </task>
+    <task id="LOCAL-00031" summary="20240506 刷题">
+      <option name="closed" value="true" />
+      <created>1715005534073</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1715005534073</updated>
+    </task>
+    <task id="LOCAL-00032" summary="20240507 刷题">
+      <option name="closed" value="true" />
+      <created>1715092581636</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1715092581636</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,8 +465,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="RedAndGreen_25" />
-    <MESSAGE value="2023/07/11 刷题" />
     <MESSAGE value="20240107 数组刷题" />
     <MESSAGE value="20240107 27数组刷题" />
     <MESSAGE value="20240107 977数组刷题" />
@@ -384,7 +482,15 @@
     <MESSAGE value="20240130 链表刷题" />
     <MESSAGE value="20240130 哈希表刷题" />
     <MESSAGE value="20240221 刷题" />
-    <option name="LAST_COMMIT_MESSAGE" value="20240221 刷题" />
+    <MESSAGE value="20240416 刷题" />
+    <MESSAGE value="20240420 刷题" />
+    <MESSAGE value="20240421 刷题" />
+    <MESSAGE value="20240422 刷题" />
+    <MESSAGE value="20240424 刷题" />
+    <MESSAGE value="20240426 刷题" />
+    <MESSAGE value="20240506 刷题" />
+    <MESSAGE value="20240507 刷题" />
+    <option name="LAST_COMMIT_MESSAGE" value="20240507 刷题" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -504,6 +610,85 @@
           <line>13</line>
           <option name="timeStamp" value="64" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/HashTable/leetcode_15.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/HashTable/leetcode_15.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/HashTable/leetcode_15.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/HashTable/leetcode_15.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/HashTable/leetcode_15.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/HashTable/leetcode_541.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/String/leetcode_151.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/String/leetcode_28.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/String/leetcode_28.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/String/leetcode_459.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/String/leetcode_459.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Stack/leetcode_225.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Stack/leetcode_225.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Stack/leetcode_225.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Stack/leetcode_20.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="92" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -518,6 +703,9 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/OJ$leetcode_59.ic" NAME="leetcode_59 Coverage Results" MODIFIED="1705223721105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Array.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/OJ$leetcode_541.ic" NAME="leetcode_541 Coverage Results" MODIFIED="1713711999308" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>HashTable.*</FILTER>
     </SUITE>
   </component>
 </project>
